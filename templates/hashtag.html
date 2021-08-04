@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>CrowdFunding Analyse De Sentiment </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="loginbox">
+        <a href="/"><img src="{{ url_for('static', filename='v.png') }}" class="avatar"></a>
+        <h1>Analyse De Sentiment CrowdFunding </h1>
+
+            <form method="post" name="Userinput" id="Userinput" action="/sentiment">
+              <br>
+              <br>
+
+                <p>Hashtag de nom de projet </p>
+                <br>
+                <input type="text" name="hashtag" placeholder="Entrer HashTag ">
+                <br>
+                <br>
+                <center><button type="submit" class="btn btn-light" id="sendMessageButton">Analyser</button></center>
+                <br>
+                <br>
+                <center><a href="/"><h6 style="color: red" >{{ error }}</h6></a></center>
+                <br>
+                <h1>Resaux Sociaux </h1>
+<br>
+
+                <div class="container">
+                  <div class="row">
+
+                    <div>
+                      <ul class="social-network social-circle">
+                        <li><a href="https://www.youtube.com/watch?v=QM3WSc3kY8M" class="icoYoutube" title="Rss"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.facebook.com/crowdfunding.servicess/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://mobile.twitter.com/search?q=%23crowdfunding&src=typeahead_click" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.google.com/search?q=crowdfunding&source=hp&ei=b3b4YPCEJuiOlwTu_6aADw&iflsig=AINFCbYAAAAAYPiEf1eXPGeblUDklcaQTZJWURCemBET&oq=crowdfungi&gs_lcp=Cgdnd3Mtd2l6EAEYADIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjoFCAAQsQM6CAgAELEDEIMBOgIILjoCCAA6CAguELEDEJMCOgUILhCxAzoICC4QxwEQrwE6CAguELEDEIMBOgsILhCxAxDHARCjAlDRA1i5HGDsJmgBcAB4AIABrAGIAccMkgEEMC4xMZgBAKABAaoBB2d3cy13aXo&sclient=gws-wiz" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/crowdfunding-to/about/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="https://www.linkedin.com/company/crowdfunding-to/about/" class="icoLinstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+<br>
+            </form>
+        </div>
+    </body>
+</html>
